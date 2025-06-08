@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Películas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    main h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .movies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1rem;
+      justify-items: center;
+    }
+
+    .movies-grid img {
+      width: 180px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .movies-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <header>
+      <h1>Portal de Películas</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="peliculas.html">Películas</a>
+        <a href="series.html">Series</a>
+        <a href="contactanos.html">Contáctanos</a>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Películas Destacadas</h2>
+      <div class="movies-grid">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/7e/Die_hard.jpg" alt="Duro de Matar">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/74/Hitman%27s_Bodyguard_poster.jpg" alt="Duro de Cuidar 1">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/5c/Hitman%27s_Wife%27s_Bodyguard_Poster.jpeg" alt="Duro de Cuidar 2">
+        <img src="https://doblaje.fandom.com/es/wiki/Una_pareja_explosiva" alt="Una Pareja Explosiva ">
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d7/Rush_Hour_2_poster.png" alt="Una Pareja Explosiva 2">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/55/Rush_Hour_3_poster.png" alt="Una Pareja Explosiva 3">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f9/TheAvengers2012Poster.jpg" alt="Los Vengadores">
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/17/Groundhog_Day_%281993%29_poster.jpg" alt="El Día de la Marmota">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg" alt="Ratatouille">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/5e/Little_Mermaid_2023_poster.jpg" alt="La Sirenita">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/05/Frozen_%282013_film%29_poster.jpg" alt="Frozen">
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/86/Tangled_poster.jpg" alt="Enredados">
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Portal de Películas. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+</body>
+</html>
